@@ -1,0 +1,285 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 ene 2023, 22:56:45
+    Author     : sergi
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 1% 1%;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-family: 'Candy Beans', sans-serif;
+}
+header p {
+    margin: 0;
+    font-size: 40px;
+} 
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav li{
+    display: inline;
+    
+}
+nav ul{
+    display: inline;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+     
+  height: 100%;
+  
+}
+
+.izquierda{
+  background: rgb(173, 227, 141);
+  
+  float: left;
+  width: 48%;
+  height: 800px;
+  
+  margin-left: 1%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.derecha{
+  background: rgb(173, 227, 141);
+  
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 48%;
+  height: 800px;
+  margin-right: 1%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.botones-izq{
+  position:absolute;
+  
+  top:40%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 250px;
+}
+
+.circulo-rojo{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff0000;
+  float:right;
+}
+
+.circulo-verde{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #31e021;
+  float:right;
+}
+
+.circulo-empate{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(131, 145, 146, 1);
+  float:right;
+}
+.circulo-perdida{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fa6a6a;
+  float:right;
+}
+.circulo-ganada{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #75f38a;
+  float:right;
+}
+.circulo-espera{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #85cdf1;
+  float:right;
+}
+
+.ganada{
+  margin-top: 15px;
+  margin-right: 70px;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #31e021;
+  float:right;
+  
+  border: 3px solid rgb(0, 0, 0); 
+}
+
+.estadisticas{
+  position: absolute;
+  width: 270px;
+  height: 180px;
+  padding-left: 1%;
+  top: 65%;
+  left: 5%;
+  border-radius: 12px;
+  border: 6px solid #333;
+  font-family: 'Sugar Snow', sans-serif;
+}
+
+.button-izq{
+    
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    height: 60px;
+    width: 250px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 25px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;   
+    font-family: 'Candy Beans', sans-serif; 
+}
+
+.button-der{
+  
+  font-size: 25px;
+  border-radius: 12px;
+  text-justify: auto;
+  height: 95px;
+  width: 98%;
+  margin: 0.7% 1%;
+  font-family: 'Candy Beans', sans-serif;
+}
+
+.button-ganada{
+  
+  font-size: 25px;
+  border-radius: 12px;
+  text-justify: auto;
+  height: 95px;
+  background: #75f38a;
+  width: 98%;
+  margin: 0.7% 1%;
+  font-family: 'Candy Beans', sans-serif;
+}
+
+.button-empate{
+  
+  font-size: 25px;
+  border-radius: 12px;
+  text-justify: auto;
+  height: 95px;
+  background: rgba(131, 145, 146, 1);
+  width: 98%;
+  margin: 0.7% 1%;
+  font-family: 'Candy Beans', sans-serif;
+}
+
+.button-perdida{
+  
+  font-size: 25px;
+  border-radius: 12px;
+  text-justify: auto;
+  height: 95px;
+  background: #fa6a6a;
+  width: 98%;
+  margin: 0.7% 1%;
+  font-family: 'Candy Beans', sans-serif;
+}
+.button-esp{
+  
+  font-size: 25px;
+  border-radius: 12px;
+  text-justify: auto;
+  background: #85cdf1;
+  height: 95px;
+  width: 98%;
+  margin: 0.7% 1%;
+  font-family: 'Candy Beans', sans-serif;
+}
+
+.titulo{
+  background: #333;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Sugar Snow', sans-serif;
+}
+
+.partidas{
+  max-height: 725px; 
+  margin-top: 65px;
+  overflow-y: scroll;
+  position: relative;
+  
+}
+
+p{
+  display:inline;
+}
+
+h1{
+  padding: 0 5px;
+  font-size: 25px;
+}
