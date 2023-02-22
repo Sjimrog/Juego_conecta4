@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <display-name>Practica 4</display-name>
+    <description>Practica Servlets Laboratorio STGI </description>
+    <servlet>
+        <servlet-name>juego</servlet-name>
+        <description> Servlet del juego </description>
+        <servlet-class>servlets.Juego</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CerrarSesion</servlet-name>
+        <servlet-class>servlets.CerrarSesion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>juego</servlet-name>
+        <url-pattern>/juego</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>tablero</servlet-name>
+        <description> Servlet para el tablero </description>
+        <servlet-class>servlets.Tablero</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tablero</servlet-name>
+        <url-pattern>/juego/tablero</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Registro</servlet-name>
+        <servlet-class>servlets.Registro</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registro</servlet-name>
+        <url-pattern>/registro</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Inicio</servlet-name>
+        <servlet-class>servlets.Inicio</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Inicio</servlet-name>
+        <url-pattern>/inicio</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ErrorInicio</servlet-name>
+        <servlet-class>servlets.ErrorInicio</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorInicio</servlet-name>
+        <url-pattern>/errorInicio</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Principal</servlet-name>
+        <servlet-class>servlets.Principal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Principal</servlet-name>
+        <url-pattern>/principal</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UnirsePartida</servlet-name>
+        <servlet-class>servlets.UnirsePartida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UnirsePartida</servlet-name>
+        <url-pattern>/UnirsePartida</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>CerrarSesion</servlet-name>
+        <url-pattern>/CerrarSesion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>50</session-timeout>
+    </session-config>
+</web-app>
